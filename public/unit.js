@@ -132,6 +132,9 @@ Player.prototype.jump_down = function(y){
 
 // +++++++++++++++++++++++++++++++++++++======================================+++++++
 function Unit(options) {
+  this.id = options.id !== undefined ? options.id : (options.skin.id !== undefined ? options.skin.id : 0);
+  this.value = options.value !== undefined ? options.value : (options.skin.value !== undefined ? options.skin.value : 0);
+  this.type = options.type;
   this.skin = document.createElement('canvas');
   document.body.appendChild(this.skin);
   this.context = this.skin.getContext('2d');

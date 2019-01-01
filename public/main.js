@@ -1,4 +1,5 @@
 //main.js
+let mainBorder = [0,0,1200,530];
 let game, player;
 var animationframe = 0;
 const SHOW_HITBOX = false;

@@ -20,13 +20,12 @@ function Game(options) {
 Game.prototype.load = function(options) {
   this.bg = options.bg;
   this.player = options.player;
+  this.border = options.mainBorder;
   this.bg_ctx.drawImage(this.bg, 0, 0);
+  this.blocks = this.prepare_objects(options.blocks);
+  this.draw_blocks(this.blocks);
 
   this.lut = options.lut;
-  this.border = options.mainBorder;
-  this.blocks = this.prepare_objects(options.blocks);
-  this.draw_objects(this.blocks);
-
   for (let i in this.lut) {
      this.lut[i].render();
      this.lut[i].move(0,0);
@@ -37,8 +36,7 @@ Game.prototype.load = function(options) {
 }
 
 //отрисовка объектов
-Game.prototype.draw_objects = function(objects) {
-  let result = [];
+Game.prototype.draw_blocks = function(objects) {
   for(let i in objects) {
     this.bg_ctx.drawImage(
       objects[i].skin.image,
