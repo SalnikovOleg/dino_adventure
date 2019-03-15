@@ -4,17 +4,16 @@ blockimg.src = '/static/img/blocks.png';
 let block1 = {width:256, height:128, image:blockimg, x:0, y:0, scale:1};
 let block2 = {width:250, height:130, image:blockimg, x:0, y:150, scale:1};
 let block_hitbox = {dx:20, dy:6, height:50};
-//x:540, y:400, width:220,
+
 let finishpoint = {width:250, height:170, image:blockimg, x:270, y:0, scale:1};
 let checkpoint_hitbox = {dx:10, dy:5, height:50};
-
+//x:540, y:400, width:220,
 let blocks = [
   {skin:block2, pos:{x:-100,y:290}, hitbox:block_hitbox},
   {skin:block2, pos:{x:750,y:210}, hitbox:block_hitbox},
   {skin:block2, pos:{x:230,y:240}, hitbox:block_hitbox},
   {skin:block1, pos:{x:520,y:394}, hitbox:block_hitbox},
   {skin:block2, pos:{x:1050,y:100}, hitbox:block_hitbox},
-  {skin:finishpoint, pos:{x:1050,y:350}, hitbox:checkpoint_hitbox},
 ];
 
 let alphimg = new Image();
@@ -55,9 +54,9 @@ let alphabet_skin = [
   {image:alphimg, width:100, height:100, x:100, y:600, scale:0.5, animFrames:28, value:"ъ", id:32},
   {image:alphimg, width:100, height:100, x:200, y:600, scale:0.5, animFrames:30, value:"ё", id:33}
 ];
-
 let a_hitbox = {dx:5, dy:5, width:30, height:30};
-let lut_map = [
+
+let objects = [
   // {skin:alphabet_skin[0], pos:{x:350,y:200}, hitbox:a_hitbox},//а
   // {skin:alphabet_skin[1], pos:{x:660,y:354}, hitbox:a_hitbox},//б
   // {skin:alphabet_skin[2], pos:{x:950,y:300}, hitbox:a_hitbox},//в
@@ -73,5 +72,6 @@ let lut_map = [
   {type:'lut', skin:alphabet_skin[12], pos:{x:30,y:50}, hitbox:a_hitbox},//л
   {type:'lut', skin:alphabet_skin[13], pos:{x:170,y:310}, hitbox:a_hitbox},//м
   {type:'lut', skin:alphabet_skin[14], pos:{x:1060,y:220}, hitbox:a_hitbox},//н
-  {type:'lut', skin:alphabet_skin[15], pos:{x:580,y:40}, hitbox:a_hitbox}//о
+  {type:'lut', skin:alphabet_skin[15], pos:{x:580,y:40}, hitbox:a_hitbox},//о
+  {type:'point', skin:finishpoint, pos:{x:1050,y:350}, hitbox:checkpoint_hitbox},
 ];

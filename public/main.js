@@ -1,3 +1,7 @@
+function load_img(){
+
+}
+
 //main.js
 let mainBorder = [0,0,1200,530];
 let game, player;
@@ -37,13 +41,12 @@ document.addEventListener('DOMContentLoaded', function(){
     function run(){
       // создание и помещение игрока
       player = new Player({id:'player', size:pinit.size, pos:pinit.pos, jump:pinit.jump, speed:pinit.speed, skin:pinit.skin});
-      let lut_list = [];
-      for(let lut of lut_map) {
-        lut_list.push(new Unit(lut));
+      let obj_list = [];
+      for(let obj of objects) {
+        obj_list.push(new Unit(obj));
       }
       //загрузка уровня
-      game.load({bg:bg, player:player, mainBorder:mainBorder, blocks:blocks, lut:lut_list});
-      //looop = setInterval(loop,100);
+      game.load({bg:bg, player:player, mainBorder:mainBorder, blocks:blocks, obj:obj_list});
       loop();//запуск игрового цикла
     }
 
