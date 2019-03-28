@@ -10,7 +10,7 @@ const SHOW_HITBOX = false;
 
 // load player skin
 let pinit = {
-  pos : {x:610, y:400},
+  pos : {x:10, y:500},
   size :  {width:50, height:90},
   speed : 2,
   jump : {speed:4, max:220}
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function(){
         obj_list.push(new Unit(obj));
       }
       //загрузка уровня
-      game.load({bg:bg, player:player, mainBorder:mainBorder, blocks:blocks, obj:obj_list});
+      game.load({bg:bg, player:player, mainBorder:mainBorder, blocks:blocks, lut:obj_list});
       loop();//запуск игрового цикла
     }
 

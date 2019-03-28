@@ -57,21 +57,21 @@ let alphabet_skin = [
 let a_hitbox = {dx:5, dy:5, width:30, height:30};
 
 let objects = [
-  // {skin:alphabet_skin[0], pos:{x:350,y:200}, hitbox:a_hitbox},//а
-  // {skin:alphabet_skin[1], pos:{x:660,y:354}, hitbox:a_hitbox},//б
-  // {skin:alphabet_skin[2], pos:{x:950,y:300}, hitbox:a_hitbox},//в
-  // {skin:alphabet_skin[3], pos:{x:1150,y:50}, hitbox:a_hitbox},//г
-  // {skin:alphabet_skin[4], pos:{x:30,y:50}, hitbox:a_hitbox},//д
-  // {skin:alphabet_skin[5], pos:{x:170,y:310}, hitbox:a_hitbox},//э
-  // {skin:alphabet_skin[6], pos:{x:1060,y:220}, hitbox:a_hitbox},//е
-  // {skin:alphabet_skin[7], pos:{x:580,y:40}, hitbox:a_hitbox}//ж
-  {type:'lut', skin:alphabet_skin[8], pos:{x:350,y:200}, hitbox:a_hitbox},//з
-  {type:'lut', skin:alphabet_skin[9], pos:{x:660,y:354}, hitbox:a_hitbox},//и
-  {type:'lut', skin:alphabet_skin[10], pos:{x:950,y:300}, hitbox:a_hitbox},//й
-  {type:'lut', skin:alphabet_skin[11], pos:{x:1150,y:50}, hitbox:a_hitbox},//к
-  {type:'lut', skin:alphabet_skin[12], pos:{x:30,y:50}, hitbox:a_hitbox},//л
-  {type:'lut', skin:alphabet_skin[13], pos:{x:170,y:310}, hitbox:a_hitbox},//м
-  {type:'lut', skin:alphabet_skin[14], pos:{x:1060,y:220}, hitbox:a_hitbox},//н
-  {type:'lut', skin:alphabet_skin[15], pos:{x:580,y:40}, hitbox:a_hitbox},//о
-  {type:'point', skin:finishpoint, pos:{x:1050,y:350}, hitbox:checkpoint_hitbox},
+   {skin:alphabet_skin[0], pos:{x:350,y:200}, hitbox:a_hitbox},//а
+   {skin:alphabet_skin[1], pos:{x:660,y:354}, hitbox:a_hitbox},//б
+   {skin:alphabet_skin[2], pos:{x:950,y:300}, hitbox:a_hitbox},//в
+   {skin:alphabet_skin[3], pos:{x:1150,y:50}, hitbox:a_hitbox},//г
+   {skin:alphabet_skin[4], pos:{x:30,y:50}, hitbox:a_hitbox},//д
+   {skin:alphabet_skin[5], pos:{x:170,y:310}, hitbox:a_hitbox},//э
+   {skin:alphabet_skin[6], pos:{x:1060,y:220}, hitbox:a_hitbox},//е
+   {skin:alphabet_skin[7], pos:{x:580,y:40}, hitbox:a_hitbox}//ж
+//  {type:'lut', skin:alphabet_skin[8], pos:{x:350,y:200}, hitbox:a_hitbox},//з
+//  {type:'lut', skin:alphabet_skin[9], pos:{x:660,y:354}, hitbox:a_hitbox},//и
+//  {type:'lut', skin:alphabet_skin[10], pos:{x:950,y:300}, hitbox:a_hitbox},//й
+//  {type:'lut', skin:alphabet_skin[11], pos:{x:1150,y:50}, hitbox:a_hitbox},//к
+//  {type:'lut', skin:alphabet_skin[12], pos:{x:30,y:50}, hitbox:a_hitbox},//л
+//  {type:'lut', skin:alphabet_skin[13], pos:{x:170,y:310}, hitbox:a_hitbox},//м
+//  {type:'lut', skin:alphabet_skin[14], pos:{x:1060,y:220}, hitbox:a_hitbox},//н
+//  {type:'lut', skin:alphabet_skin[15], pos:{x:580,y:40}, hitbox:a_hitbox},//о
+//  {type:'point', skin:finishpoint, pos:{x:1050,y:350}, hitbox:checkpoint_hitbox},
 ];
